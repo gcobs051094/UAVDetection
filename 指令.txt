@@ -1,0 +1,16 @@
+
+超參數進化
+python train.py --data data/Drone.yaml --cfg models/yolov5x_Drone.yaml --img-size 640 --batch 32 --epochs 70 --weights yolov5s.pt --freeze 3 --image-weight --evolve 30 --cache --label-smoothing 0.01
+
+訓練
+python train.py --data data/Drone.yaml --cfg models/yolov5x_Drone.yaml --hyp data/hyps/hyp.scratch-high_Drone.yaml --img-size 640 --batch 8 --epochs 300 --weights yolov5x.pt --image-weight --cache --label-smoothing 0.01
+
+偵測
+用jupyter
+
+輸出標記
+python detect.py --source D:/dataset/CCU_driver_action_dataset/daytime/text_right/ --weight best.pt --save-txt
+
+
+
+
