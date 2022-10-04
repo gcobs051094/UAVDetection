@@ -1,5 +1,0 @@
-train: ./Drone_data/train+VisDrone
-val: ./Drone_data/val+VisDrone
-
-nc: 4
-names: ['car', 'hov', 'person', 'motorcycle']
