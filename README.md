@@ -8,7 +8,8 @@ T-Brain_無人機飛行載具之智慧計數競賽
 * 10/11 對輸入影像進行平舖、調整遇預測信心分數到.5 分數為 0.653412
 * 10/11 對輸入影像進行平舖、調整遇預測信心分數到.3 分數為 0.580613
 * slice_height 384 、 overlap_height_ratio 0.2、threshold 0.5: 0.660452
-* slice_height 256 、 overlap_height_ratio 0.2、threshold 0.6: 沒測 一看就很爛
+* #slice_height 256 、 overlap_height_ratio 0.2、threshold 0.5: 
+* #slice_height 416 、 overlap_height_ratio 0.2、threshold 0.5: 
 ```
 資料擴增參數
 A.RandomGamma(p=0.1),
