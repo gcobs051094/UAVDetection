@@ -10,6 +10,7 @@ T-Brain_無人機飛行載具之智慧計數競賽
 * #slice_height 384 、 overlap_height_ratio 0.2、threshold 0.5: 0.660452
 * #slice_height 256 、 overlap_height_ratio 0.2、threshold 0.5: 0.655116
 * #slice_height 416 、 overlap_height_ratio 0.2、threshold 0.5: 0.660528
+* #slice_height 416 、 overlap_height_ratio 0.2、threshold 0.5: (只有官方訓練資料(重label))
 ```
 資料擴增參數
 A.RandomGamma(p=0.1),
