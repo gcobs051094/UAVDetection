@@ -43,7 +43,7 @@ pip install pandas
 ```
 python train.py --data data/Drone.yaml --cfg models/yolov5x_Drone.yaml --hyp data/hyps/hyp.scratch-high_Drone.yaml --img-size 640 --batch 8 --epochs 300 --weights yolov5x.pt --image-weight --cache --label-smoothing 0.01
 ```
-*砍權重(用於未完成訓練的pt檔)
+* 砍權重(用於未完成訓練的pt檔)
 ```
 python -c "from utils.general import *; strip_optimizer('path/to/best.pt')"  # strip
 python train.py --weights path/to/best.pt  # start new training
