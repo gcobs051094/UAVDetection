@@ -13,11 +13,11 @@ T-Brain_無人機飛行載具之智慧計數競賽
 * #slice_height 416 、 overlap_height_ratio 0.2、threshold 0.5: (只有官方訓練資料(重label))
 ```
 資料擴增參數
+A.Blur(p=0.1),
 A.RandomGamma(p=0.1),
 A.CLAHE(clip_limit=4.0, tile_grid_size=(8, 8), always_apply=False, p=0.1), #將對比度受限的自適應直方圖均衡應用於輸入圖像。
 A.RandomBrightnessContrast(p=0.1),
 A.RandomToneCurve(p=0.1),
-A.Downscale(scale_min=0.25, scale_max=0.25, interpolation=None, always_apply=False, p=0.1), #通過縮小和放大回來降低圖像質量
 A.FancyPCA(alpha=0.1, always_apply=False, p=0.1), #增強 RGB 圖像
 A.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2, hue=0.2, always_apply=False, p=0.1), #隨機改變圖像的亮度、對比度和飽和度
 A.Sharpen(p=0.1),
