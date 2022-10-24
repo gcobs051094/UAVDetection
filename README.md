@@ -7,10 +7,29 @@ T-Brain_無人機飛行載具之智慧計數競賽
 * 10/6 對輸入影像進行平舖、scale改回0.9 分數為 0.584564
 * 10/11 對輸入影像進行平舖、調整遇預測信心分數到.5 分數為 0.653412
 * 10/11 對輸入影像進行平舖、調整遇預測信心分數到.3 分數為 0.580613
+* #1006
+* #slice_height 512 、 overlap_height_ratio 0.3 : 0.581219
+* #slice_height 640 、 overlap_height_ratio 0.2、threshold 0.5: 0.653412
+* #slice_height 640 、 overlap_height_ratio 0.2、threshold 0.3: 0.580613
 * #slice_height 384 、 overlap_height_ratio 0.2、threshold 0.5: 0.660452
 * #slice_height 256 、 overlap_height_ratio 0.2、threshold 0.5: 0.655116
 * #slice_height 416 、 overlap_height_ratio 0.2、threshold 0.5: 0.660528
-* #slice_height 416 、 overlap_height_ratio 0.2、threshold 0.5: (只有官方訓練資料(重label))
+* #slice_height 416 、 overlap_height_ratio 0.5、threshold 0.5: 0.648382
+* #slice_height 416 、 overlap_height_ratio 0.3、overlap_width_ratio 0.1、threshold 0.5: 0.662307
+
+* #1017
+* #slice_height 416 、 overlap_height_ratio 0.2、threshold 0.5: 0.57428(只有官方訓練資料(重label 1017))
+* #slice_height 640 、 overlap_height_ratio 0.2、threshold 0.5: 0.569642(只有官方訓練資料(重label))
+* #slice_height 416 、 overlap_height_ratio 0.4、threshold 0.7: 0.592882(只有官方訓練資料(重label))
+* #slice_height 512 、 overlap_height_ratio 0.5、overlap_width_ratio 0.3、threshold 0.7: 0.580567(只有官方訓練資料(重label))
+
+* #
+* #slice_height 416 、 overlap_height_ratio 0.2、threshold 0.5: 0.577105(1006當預訓練權重+只有官方訓練資料(重label))
+* #slice_height 640 、 overlap_height_ratio 0.2、threshold 0.5: 0.57247(1006當預訓練權重+只有官方訓練資料(重label))
+* #slice_height 416 、 overlap_height_ratio 0.2、threshold 0.5: 0.587519(1006當預訓練權重+官方重la+VisDrone)
+
+* #1021
+* #slice_height 416 、 overlap_height_ratio 0.3、overlap_width_ratio 0.1、threshold 0.5: 0.55754(只有官方訓練資料(重label))
 ```
 資料擴增參數
 A.Blur(p=0.1),
